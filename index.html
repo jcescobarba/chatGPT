@@ -73,6 +73,218 @@ header {
   margin-left: 5px;
 }
 
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+
+.carousel {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .carousel img {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel img::after {
+    content: attr(alt);
+    display: block;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+
+  .carousel-img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  margin: 0 10px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px #ddd;
+}
+
+.contact-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px #ddd;
+}
+
+.contact-form input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.contact-form button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #555;
+}
+
+.news-section {
+  padding: 50px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px #ddd;
+  
+}
+
+.news-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.news-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.news-item img {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 10px;
+  box-shadow: 0px 5px 10px #ddd;
+}
+
+.news-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.news-item p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #777;
+  text-align: center;
+}
+
+.news-item button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.news-item button:hover {
+  background-color: #555;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.contact-form {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info h3,
+.social-media h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin: 0;
+}
+
+.social-media ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.social-media li {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.social-media a {
+  color: black;
+}
+
+.social-media a:hover {
+  color: #666;
+}
+
+.fab {
+  font-size: 1.5rem;
+}
+
+.spacer {
+  margin-top: 50px;
+  /* o */
+  padding-bottom: 50px;
+}
+
 
         </style>
         <link rel="icon" href="images/favicon.ico">
@@ -82,7 +294,8 @@ header {
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#">
-                    <img class="logo" src="images/logo.png" alt="¡SUMÉRGETE EN UNA AVENTURA EN EL CAMPO!">
+                    <img class="logo" src="images/logo.png" alt="¡SUMÉRGETE EN
+                        UNA AVENTURA EN EL CAMPO!">
 
                 </a>
                 <button class="navbar-toggler" type="button"
@@ -135,11 +348,13 @@ header {
                     <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search"
                             placeholder="Buscar" aria-label="Buscar">
-                        <button class="btn btn-outline-success my-2 my-sm-0 search-button"
+                        <button class="btn btn-outline-success my-2 my-sm-0
+                            search-button"
                             type="submit">Buscar</button>
                     </form>
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle language-menu"
+                        <button class="btn btn-secondary dropdown-toggle
+                            language-menu"
                             type="button" id="dropdownLanguage"
                             data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
@@ -155,5 +370,175 @@ header {
                 </div>
             </nav>
         </header>
+        <main>
+            <div class="carousel-container">
+                <h2>Explora nuestras fincas</h2>
+                <div id="carouselExampleIndicators" class="carousel slide"
+                    data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators"
+                            data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators"
+                            data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators"
+                            data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner carousel">
+                        <div class="carousel-item active">
+                            <img src="images/farm (1).jpg" class="d-block w-100
+                                carousel-img" alt="Fincas en Cundinamarca -
+                                Hermosos paisajes rurales y tranquilos">
+                            <div class="carousel-caption">
+                                <h5>Finca El Paraíso</h5>
+                                <p>Fundada en 1903, la finca El Paraíso es
+                                    reconocida por su café de alta calidad,
+                                    gracias a su clima cálido y suelo fértil.
+                                    Con más de un siglo de experiencia, se ha
+                                    convertido en un referente en la producción
+                                    de café de especialidad.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/farm (2).jpg" class="d-block w-100
+                                carousel-img" alt="Fincas en Eje Cafetero -
+                                Disfruta de la naturaleza y el café de
+                                Colombia">
+                            <div class="carousel-caption">
+                                <h5>Finca La Colina</h5>
+                                <p>Esta finca cuenta con una ubicación
+                                    privilegiada en pleno corazón del Eje
+                                    Cafetero, rodeada de montañas y bellos
+                                    paisajes. La Colina se destaca por su
+                                    producción de café orgánico y su compromiso
+                                    con el medio ambiente.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/farm (3).jpg" class="d-block w-100
+                                carousel-img" alt="Fincas en Antioquia - Vive la
+                                experiencia de la cultura paisa">
+                            <div class="carousel-caption">
+                                <h5>Finca La Esperanza</h5>
+                                <p>Ubicada en las colinas de Cundinamarca, la
+                                    finca La Esperanza se enfoca en la
+                                    producción de café de alta calidad y en
+                                    ofrecer una experiencia turística única. Con
+                                    más de 60 años de historia, esta finca ha
+                                    sido reconocida por su excelencia en el
+                                    cultivo y procesamiento del café.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev"
+                        href="#carouselExampleIndicators" role="button"
+                        data-slide="prev">
+                        <span class="carousel-control-prev-icon"
+                            aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next"
+                        href="#carouselExampleIndicators" role="button"
+                        data-slide="next">
+                        <span class="carousel-control-next-icon"
+                            aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
 
-    </body>
+                <!-- Sección de formulario de contacto y noticias -->
+                <div class="container">
+                    <div class="contact-form" style="width: 25%;">
+                        <!-- Formulario de contacto -->
+                        <section class="contact-section">
+                            <h2>Únete a nuestro blog</h2>
+                            <form action="#">
+                                <label for="email">Correo electrónico:</label>
+                                <input type="email" id="email" name="email"
+                                    required>
+                                <br>
+                                <input type="checkbox" id="accept-policy"
+                                    name="accept-policy" required>
+                                <label for="accept-policy">Acepto la política de
+                                    protección de datos</label>
+                                <br>
+                                <button type="submit">Inscribirse</button>
+                            </form>
+                        </section>
+                    </div>
+
+                    <div class="news-section" style="width: 75%;">
+                        <!-- Sección de noticias -->
+                        <section class="news-section">
+                            <h2>Noticias destacadas</h2>
+                            <div class="news-container">
+                                <div class="news-item">
+                                    <img src="images/noticia1.jpg" alt="Imagen
+                                        de noticia">
+                                    <h3>Sostenibilidad en el turismo: el camino
+                                        hacia el futuro</h3>
+                                    <p>¿Cómo podemos garantizar que el turismo
+                                        no dañe nuestro medio ambiente y
+                                        nuestras comunidades locales? Descubre
+                                        las iniciativas sostenibles que están
+                                        transformando la industria turística.</p>
+                                    <a href="#">Ver más</a>
+                                </div>
+                                <div class="news-item">
+                                    <img src="images/noticia2.jpg" alt="Imagen
+                                        de noticia">
+                                    <h3>Turismo inmersivo con el campesino: una
+                                        experiencia auténtica</h3>
+                                    <p>¿Quieres experimentar la vida rural en
+                                        Colombia de primera mano? Descubre cómo
+                                        el turismo inmersivo está permitiendo a
+                                        los viajeros conectarse con los
+                                        campesinos locales y su cultura de una
+                                        manera auténtica y enriquecedora.</p>
+                                    <a href="#">Ver más</a>
+                                </div>
+                                <div class="news-item">
+                                    <img src="images/noticia3.jpg" alt="Imagen
+                                        de noticia">
+                                    <h3>El turismo puede ser una fuerza para el
+                                        cambio social</h3>
+                                    <p>¿Cómo podemos utilizar el turismo como
+                                        una herramienta para el desarrollo
+                                        económico y social de las comunidades
+                                        locales? Descubre cómo algunas
+                                        iniciativas turísticas están trabajando
+                                        para fomentar el empoderamiento y la
+                                        inclusión de las poblaciones locales.</p>
+                                    <a href="#">Ver más</a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </main>
+            <div class="spacer"></div>
+
+            <footer>
+                <div class="contact-info">
+                    <h3>Contacto</h3>
+                    <p>Teléfono: 555-1234</p>
+                    <p>Dirección: Calle Falsa 123, Ciudad Ficticia</p>
+                    <p>Correo electrónico: info@miempresa.com</p>
+                </div>
+                <div class="social-media">
+                    <h3>Redes Sociales</h3>
+                    <ul>
+                        <li><a href="https://www.youtube.com"><i class="fab
+                                    fa-youtube"></i></a></li>
+                        <li><a href="https://www.facebook.com"><i class="fab
+                                    fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com"><i class="fab
+                                    fa-instagram"></i></a></li>
+                        <li><a href="https://www.tiktok.com"><i class="fab
+                                    fa-tiktok"></i></a></li>
+                        <li><a href="https://www.twitter.com"><i class="fab
+                                    fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
+
+        </body>
