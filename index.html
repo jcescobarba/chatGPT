@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no">
+
+        <!-- Bootstrap 4.0 CSS -->
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
+
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+            integrity="sha512-vjKbBAaG+HezBfNOGyfNXAvdnX9Kjk13drlZIg6Z2UOwNNms6J5b/DR5Ag5E8l+oXHvCZc25+GJNczN+qvWn1w=="
+            crossorigin="anonymous" />
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha384-J6qa4849blE7LVrEuwJpTskApFEo+uCY8v8SUj4cRxnbgBk/6Ebc1pwEjFgFBQvu"
+            crossorigin="anonymous"></script>
+
+        <!-- Incluir archivos JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@2.9.3/dist/umd/popper.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+        <!-- Bootstrap 4.0 JS -->
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+        <!-- Incluir archivos CSS -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <title>VacApp</title>
+
+        <!-- CSS para accesibilidad de baja visibilidad -->
+        <style>
+        /* Aquí puedes agregar tu CSS para mejorar la accesibilidad de baja visibilidad */
+
+
+        html,
+body {
+  height: 100%;
+}
+
+.container-fluid {
+  height: 100%;
+}
+
+
+.logo {
+  width: 50%; /* Agregar esta línea */
+  margin-right: 15px;
+}
+
+header {
+  background-color: #fff;
+}
+
+.search-button {
+  margin-right: 5px;
+}
+
+.language-menu {
+  margin-left: 5px;
+}
+
+
+        </style>
+        <link rel="icon" href="images/favicon.ico">
+
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="images/logo.png" alt="¡SUMÉRGETE EN UNA AVENTURA EN EL CAMPO!">
+
+                </a>
+                <button class="navbar-toggler" type="button"
+                    data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#"
+                                id="nuestra-empresa" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Nuestra empresa
+                            </a>
+                            <div class="dropdown-menu"
+                                aria-labelledby="nuestra-empresa">
+                                <a class="dropdown-item" href="#">Acerca de
+                                    VacApp</a>
+                                <a class="dropdown-item" href="#">Nuestro equipo</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#"
+                                id="fincas" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Fincas
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="fincas">
+                                <a class="dropdown-item" href="#">Cundinamarca</a>
+                                <a class="dropdown-item" href="#">Eje Cafetero</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#"
+                                id="mi-cuenta" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Mi cuenta
+                            </a>
+                            <div class="dropdown-menu"
+                                aria-labelledby="mi-cuenta">
+                                <a class="dropdown-item" href="#">Perfil</a>
+                                <a class="dropdown-item" href="#">Mis reservas</a>
+                                <a class="dropdown-item" href="#">Mis
+                                    recompensas</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search"
+                            placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-outline-success my-2 my-sm-0 search-button"
+                            type="submit">Buscar</button>
+                    </form>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle language-menu"
+                            type="button" id="dropdownLanguage"
+                            data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Español
+                        </button>
+                        <div class="dropdown-menu"
+                            aria-labelledby="dropdownLanguage">
+                            <a class="dropdown-item" href="#">Español</a>
+                            <a class="dropdown-item" href="#">Inglés</a>
+                            <a class="dropdown-item" href="#">Francés</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+    </body>
